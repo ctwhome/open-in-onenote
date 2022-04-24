@@ -24,8 +24,8 @@ storage.get(["OINStatus", "OINCloseTab", "OINCloseTime", "OINWorkspaces"], funct
   
   // Accumulated expression
   let reservedExpression = "(https:\/\/www\.onenote\.so\/)(?!" + reservedRegex + ").+";
-  let expression = "((https:\/\/www\.onenote\.so\/)(native\/)?" + workspacesRegex + ").+";
-  
+  let expression = "((https\:\/\/d\.docs\.live\.net\/)(native\/)?" + workspacesRegex + ").+";
+ // onenote://https://d.docs.live.net/6df464e26ff87656/Documentos/Learning%20-%20All%20topics/🎓%20ACTIVE%20COURSES.one#Learnign%20how%20to%20Learn&section-id={81E287FA-1E86-4F7D-A299-CC32E0FFD4D1}&page-id={9F4A9B35-B5BC-FF40-AFC3-F830D327BD60
   var onenoteReservedRegex = new RegExp(reservedExpression);
   let reservedMatch = onenoteReservedRegex.exec(tabUrl);
 
