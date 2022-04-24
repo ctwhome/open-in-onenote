@@ -36,7 +36,7 @@ storage.get(["OINStatus", "OINCloseTab", "OINCloseTime", "OINWorkspaces"], funct
     if ((statusExt || statusExt == undefined) && reservedMatch != null) {
       if (match != null) {
         if (tabUrl.indexOf("/native/") == -1) {
-          loc.replace(tabUrl.replace(/^https?\:\/\//i, 'onenote://'));
+          loc.replace(tabUrl.replace(/^https?\:\/\//i, 'onenote://https://'));
         }
         if (linkTab) {
           setTimeout(() => {
