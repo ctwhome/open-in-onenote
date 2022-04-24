@@ -1,6 +1,6 @@
 {
    "manifest_version": 2,
-   "name": "Open in Notion",
+   "name": "Open in OneNote",
    "version": "0.1.5.2",
    "description": "Open share links in the your desktop app.",
    "icons": {
@@ -18,11 +18,11 @@
          "32": "icons/icon-on-32.png",
          "48": "icons/icon-on-48.png"
       },
-      "default_title": "Open in Notion"
+      "default_title": "Open in OneNote"
    },
    "content_scripts": [ {
       "js": [ "js/content.js" ],
-      "matches": [ "*://*.notion.so/*" ],
+      "matches": [ "*onenote:https://d.docs.live.net*" ],
       "run_at": "document_end"
    } ],
    "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAkRArcrrxO2IKjjkEwkBx2PP7o5VO9BWwOXl/rDfAF1d+lE8bpxlt8Kjl1TolGaeqxKBDQZybH8H67ZmKRJWylvqHo0xNzmtaSt4/rhcjhAiZhFvp0y8ARvECJiYO8elFQ5RTCOhfKaWzMblfU0OlA5WBGVb1kf1kLCadyPj7eUap4rHqS33YbmcYP6sILs+HGzvL1Cx7AFgnpJHjfiYutDZyWq/GcMKYTQEOoLv2M6OsB8zhFiqI4KiycEyjpY1FHnSOF9oZ4KHfIKtN/1JWRBFezaCbaGGzTa2F1RqVE3rri37kPFWYck4Ob/YnAMVYcuDR3jzWzbdWmFQ5ZAxPUwIDAQAB",
@@ -30,6 +30,6 @@
       "chrome_style": true,
       "page": "options.html"
    },
-   "permissions": [ "storage", "*://*.notion.so/*" ],
+   "permissions": [ "storage", "*onenote:https://d.docs.live.net*" ],
    "update_url": "https://clients2.google.com/service/update2/crx"
 }

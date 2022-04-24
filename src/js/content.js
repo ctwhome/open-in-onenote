@@ -1,7 +1,7 @@
 var storage = chrome.storage.local;
 var loc = document.location;
 var tabUrl = loc.href;
-// Reserved sections of the Notion website
+// Reserved sections of the OneNote website
 var reservedList = ["signup", "login", "careers", "pricing", "customers", "guides", "enterprise", 
                     "mobile", "desktop", "web-clipper", "product", "wikis", "projects", "notes",
                     "teams", "remote", "personal", "startups", "students", "educators", "evernote",
@@ -23,20 +23,20 @@ storage.get(["OINStatus", "OINCloseTab", "OINCloseTime", "OINWorkspaces"], funct
   let workspacesRegex = "(" + workspacesList.join("|") + ")";
   
   // Accumulated expression
-  let reservedExpression = "(https:\/\/www\.notion\.so\/)(?!" + reservedRegex + ").+";
-  let expression = "((https:\/\/www\.notion\.so\/)(native\/)?" + workspacesRegex + ").+";
+  let reservedExpression = "(https:\/\/www\.onenote\.so\/)(?!" + reservedRegex + ").+";
+  let expression = "((https:\/\/www\.onenote\.so\/)(native\/)?" + workspacesRegex + ").+";
   
-  var notionReservedRegex = new RegExp(reservedExpression);
-  let reservedMatch = notionReservedRegex.exec(tabUrl);
+  var onenoteReservedRegex = new RegExp(reservedExpression);
+  let reservedMatch = onenoteReservedRegex.exec(tabUrl);
 
-  var notionRegex = new RegExp(expression);
-  let match = notionRegex.exec(tabUrl);
+  var onenoteRegex = new RegExp(expression);
+  let match = onenoteRegex.exec(tabUrl);
   
   // Get extension status
     if ((statusExt || statusExt == undefined) && reservedMatch != null) {
       if (match != null) {
         if (tabUrl.indexOf("/native/") == -1) {
-          loc.replace(tabUrl.replace(/^https?\:\/\//i, 'notion://'));
+          loc.replace(tabUrl.replace(/^https?\:\/\//i, 'onenote://'));
         }
         if (linkTab) {
           setTimeout(() => {

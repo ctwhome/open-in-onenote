@@ -1,18 +1,18 @@
-# Open in Notion Privacy Policy
+# Open in OneNote Privacy Policy
 
 > Last updated: May 05, 2020
 
-This Privacy Policy describes my policies and procedures on the collection, use and disclosure of Your information when You use the Open in Notion and tells You about Your privacy rights.   
+This Privacy Policy describes my policies and procedures on the collection, use and disclosure of Your information when You use the Open in OneNote and tells You about Your privacy rights.   
 
-By using the Open in Notion Chrome extension, You agree to the collection and use of information in accordance with this Privacy Policy.
+By using the Open in OneNote Chrome extension, You agree to the collection and use of information in accordance with this Privacy Policy.
 
 # Requirements
-By installing the Open in Notion you allow it read and change your data on all notion.so sites.
+By installing the Open in OneNote you allow it read and change your data on all onenote.so sites.
 
 # Collecting and Using Your Personal Data
 
 ## Usage Data 
-Usage Data is collected automatically when using the Open in Notion extension. Usage Data may include information such as notion.so pages that you visit, extension settings from local storage of your Chrome browser.
+Usage Data is collected automatically when using the Open in OneNote extension. Usage Data may include information such as onenote.so pages that you visit, extension settings from local storage of your Chrome browser.
 
 ## Your Personal Data
 Your information is processed at the Chrome browser and your computer.      
